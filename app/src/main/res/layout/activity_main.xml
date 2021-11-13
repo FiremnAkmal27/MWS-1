@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:background="#2f2f2f"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <TextView
         android:fontFamily="sans-serif-condensed-medium"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="45dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WELCOME !"
@@ -22,26 +23,29 @@
 
     <EditText
         android:id="@+id/user"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="#38ffffff"
-        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_round"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Username"
         android:textColorHint="#ffff"
         android:padding="20dp"
         android:drawableLeft="@drawable/ic_baseline_supervised_user_circle_24"
         android:drawablePadding="10dp"
+        android:inputType="text"
+        android:textColor="#ffff"
+
         />
 
     <EditText
         android:id="@+id/pass"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="#38ffffff"
-        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_round"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:textColorHint="#ffff"
@@ -49,20 +53,65 @@
         android:drawablePadding="10dp"
         android:padding="20dp"
         android:inputType="textPassword"
+        android:textColor="#ffff"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <CheckBox android:id="@+id/ckbx_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Remember Me"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:onClick="onCheckboxClicked"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="5dp"
+            android:text="Forget Password"
+            android:textColor="#ffff"
+            android:textSize="16sp"
+
+        />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnLgn"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_width="350"
         android:layout_height="60dp"
         android:text="Login"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:backgroundTint="#ffcb6d"
-        android:drawableLeft="@drawable/ic_baseline_login_24"
-        android:drawablePadding="10dp"
+        android:background="@drawable/btn_round"
         android:layout_gravity="center_horizontal"
+        android:textSize="17"
+        />
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_marginTop="20dp"
+        android:layout_width="350"
+        android:layout_height="60dp"
+        android:text="sign up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/btn_round"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17"
         />
 
 

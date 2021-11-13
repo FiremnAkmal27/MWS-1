@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/LGNMWS/app/src/main/res/drawable/btn_round.xml" value="0.2203125" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/LGNMWS/app/src/main/res/drawable/edit_round.xml" value="0.2203125" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/LGNMWS/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2203125" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/LGNMWS/app/src/main/res/layout/activity_dashboard_launch.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/LGNMWS/app/src/main/res/layout/activity_main.xml" value="0.22" />
       </map>
